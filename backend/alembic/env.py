@@ -4,8 +4,9 @@ from sqlalchemy.ext.asyncio import create_async_engine
 
 from alembic import context
 from app.config import get_settings
+from app.db.models import Base
 
-target_metadata = None
+target_metadata = Base.metadata
 
 
 def _run(connection):

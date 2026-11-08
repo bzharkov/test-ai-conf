@@ -1,0 +1,156 @@
+[
+ {
+  "category": "cpu_cooler",
+  "brand": "DeepCool",
+  "model": "AK400",
+  "name": "DeepCool AK400",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151",
+    "LGA1150",
+    "LGA1155"
+   ],
+   "height_mm": 155,
+   "radiator_mm": null,
+   "tdp_rating_w": 220
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "DeepCool",
+  "model": "AG400",
+  "name": "DeepCool AG400",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151",
+    "LGA1150",
+    "LGA1155"
+   ],
+   "height_mm": 148,
+   "radiator_mm": null,
+   "tdp_rating_w": null
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "DeepCool",
+  "model": "AK620",
+  "name": "DeepCool AK620",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151",
+    "LGA1150",
+    "LGA1155"
+   ],
+   "height_mm": 160,
+   "radiator_mm": null,
+   "tdp_rating_w": 260
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "Thermalright",
+  "model": "Peerless Assassin 120 SE",
+  "name": "Thermalright Peerless Assassin 120 SE",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151"
+   ],
+   "height_mm": 155,
+   "radiator_mm": null,
+   "tdp_rating_w": 260
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "Thermalright",
+  "model": "Assassin X 120 Refined SE",
+  "name": "Thermalright Assassin X 120 Refined SE",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151"
+   ],
+   "height_mm": 148,
+   "radiator_mm": null,
+   "tdp_rating_w": null
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "Noctua",
+  "model": "NH-D15",
+  "name": "Noctua NH-D15",
+  "specs": {
+   "type": "air",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700",
+    "LGA1200",
+    "LGA1151"
+   ],
+   "height_mm": 165,
+   "radiator_mm": null,
+   "tdp_rating_w": null
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "Arctic",
+  "model": "Liquid Freezer III 240",
+  "name": "Arctic Liquid Freezer III 240",
+  "specs": {
+   "type": "aio",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700"
+   ],
+   "height_mm": null,
+   "radiator_mm": 240,
+   "tdp_rating_w": null
+  }
+ },
+ {
+  "category": "cpu_cooler",
+  "brand": "Arctic",
+  "model": "Liquid Freezer III 360",
+  "name": "Arctic Liquid Freezer III 360",
+  "specs": {
+   "type": "aio",
+   "sockets": [
+    "AM4",
+    "AM5",
+    "LGA1700"
+   ],
+   "height_mm": null,
+   "radiator_mm": 360,
+   "tdp_rating_w": null
+  }
+ }
+]

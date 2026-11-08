@@ -1,0 +1,56 @@
+# Budget shares per category: [share, tolerance]; weights are for the scoring terms.
+# gpu_required: a discrete GPU must be in the build (otherwise only if the CPU has an iGPU).
+defaults:
+  min_ram_gb: 16
+  min_storage_gb: 500
+profiles:
+  gaming:
+    gpu_required: true
+    shares: {gpu: [0.40, 0.05], cpu: [0.17, 0.03], motherboard: [0.11, 0.02], ram: [0.08, 0.01],
+             storage: [0.07, 0.01], psu: [0.07, 0.01], case: [0.06, 0.01], cpu_cooler: [0.03, 0.01]}
+    weights: {gpu: 0.62, cpu_g: 0.22, cpu_m: 0.02, ram: 0.07, storage: 0.07}
+    min_ram_gb: 16
+  video_editing:
+    gpu_required: true
+    shares: {gpu: [0.20, 0.05], cpu: [0.28, 0.04], motherboard: [0.11, 0.02], ram: [0.13, 0.03],
+             storage: [0.10, 0.02], psu: [0.07, 0.01], case: [0.06, 0.01], cpu_cooler: [0.05, 0.01]}
+    weights: {gpu: 0.15, cpu_g: 0.05, cpu_m: 0.40, ram: 0.20, storage: 0.20}
+    min_ram_gb: 32
+    min_storage_gb: 1000
+  3d_render:
+    gpu_required: true
+    shares: {gpu: [0.25, 0.05], cpu: [0.28, 0.04], motherboard: [0.10, 0.02], ram: [0.12, 0.03],
+             storage: [0.08, 0.02], psu: [0.07, 0.01], case: [0.06, 0.01], cpu_cooler: [0.04, 0.01]}
+    weights: {gpu: 0.30, cpu_g: 0.0, cpu_m: 0.40, ram: 0.20, storage: 0.10}
+    min_ram_gb: 32
+    min_storage_gb: 1000
+  office:
+    gpu_required: false
+    shares: {gpu: [0.0, 0.0], cpu: [0.27, 0.05], motherboard: [0.18, 0.03], ram: [0.15, 0.03],
+             storage: [0.15, 0.03], psu: [0.09, 0.02], case: [0.11, 0.02], cpu_cooler: [0.05, 0.01]}
+    weights: {gpu: 0.0, cpu_g: 0.30, cpu_m: 0.20, ram: 0.25, storage: 0.25}
+    min_ram_gb: 16
+  study:
+    gpu_required: false
+    shares: {gpu: [0.0, 0.0], cpu: [0.27, 0.05], motherboard: [0.18, 0.03], ram: [0.15, 0.03],
+             storage: [0.15, 0.03], psu: [0.09, 0.02], case: [0.11, 0.02], cpu_cooler: [0.05, 0.01]}
+    weights: {gpu: 0.05, cpu_g: 0.30, cpu_m: 0.20, ram: 0.25, storage: 0.20}
+    min_ram_gb: 16
+  programming:
+    gpu_required: false
+    shares: {gpu: [0.0, 0.0], cpu: [0.30, 0.05], motherboard: [0.15, 0.03], ram: [0.17, 0.03],
+             storage: [0.14, 0.03], psu: [0.08, 0.02], case: [0.10, 0.02], cpu_cooler: [0.06, 0.01]}
+    weights: {gpu: 0.0, cpu_g: 0.10, cpu_m: 0.45, ram: 0.25, storage: 0.20}
+    min_ram_gb: 16
+  streaming:
+    gpu_required: true
+    shares: {gpu: [0.30, 0.05], cpu: [0.25, 0.04], motherboard: [0.10, 0.02], ram: [0.09, 0.02],
+             storage: [0.07, 0.02], psu: [0.07, 0.01], case: [0.06, 0.01], cpu_cooler: [0.06, 0.01]}
+    weights: {gpu: 0.35, cpu_g: 0.15, cpu_m: 0.30, ram: 0.10, storage: 0.10}
+    min_ram_gb: 16
+  ml:
+    gpu_required: true
+    shares: {gpu: [0.45, 0.05], cpu: [0.15, 0.03], motherboard: [0.10, 0.02], ram: [0.10, 0.02],
+             storage: [0.07, 0.02], psu: [0.07, 0.01], case: [0.04, 0.01], cpu_cooler: [0.02, 0.01]}
+    weights: {gpu: 0.60, cpu_g: 0.0, cpu_m: 0.15, ram: 0.15, storage: 0.10}
+    min_ram_gb: 32

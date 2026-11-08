@@ -1,0 +1,461 @@
+[
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 5500",
+  "name": "AMD Ryzen 5 5500",
+  "specs": {
+   "socket": "AM4",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.6,
+   "boost_clock_ghz": 4.2,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 5600",
+  "name": "AMD Ryzen 5 5600",
+  "specs": {
+   "socket": "AM4",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.5,
+   "boost_clock_ghz": 4.4,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 5600G",
+  "name": "AMD Ryzen 5 5600G",
+  "specs": {
+   "socket": "AM4",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.9,
+   "boost_clock_ghz": 4.4,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 5600X",
+  "name": "AMD Ryzen 5 5600X",
+  "specs": {
+   "socket": "AM4",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.7,
+   "boost_clock_ghz": 4.6,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 5700X",
+  "name": "AMD Ryzen 7 5700X",
+  "specs": {
+   "socket": "AM4",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 3.4,
+   "boost_clock_ghz": 4.6,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 5800X3D",
+  "name": "AMD Ryzen 7 5800X3D",
+  "specs": {
+   "socket": "AM4",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 3.4,
+   "boost_clock_ghz": 4.5,
+   "tdp_w": 105,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 7500F",
+  "name": "AMD Ryzen 5 7500F",
+  "specs": {
+   "socket": "AM5",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.7,
+   "boost_clock_ghz": 5.0,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 7600",
+  "name": "AMD Ryzen 5 7600",
+  "specs": {
+   "socket": "AM5",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.8,
+   "boost_clock_ghz": 5.1,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 7700",
+  "name": "AMD Ryzen 7 7700",
+  "specs": {
+   "socket": "AM5",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 3.8,
+   "boost_clock_ghz": 5.3,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 7800X3D",
+  "name": "AMD Ryzen 7 7800X3D",
+  "specs": {
+   "socket": "AM5",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 4.2,
+   "boost_clock_ghz": 5.0,
+   "tdp_w": 120,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 9 7900X",
+  "name": "AMD Ryzen 9 7900X",
+  "specs": {
+   "socket": "AM5",
+   "cores": 12,
+   "threads": 24,
+   "base_clock_ghz": 4.7,
+   "boost_clock_ghz": 5.6,
+   "tdp_w": 170,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 9 7950X",
+  "name": "AMD Ryzen 9 7950X",
+  "specs": {
+   "socket": "AM5",
+   "cores": 16,
+   "threads": 32,
+   "base_clock_ghz": 4.5,
+   "boost_clock_ghz": 5.7,
+   "tdp_w": 170,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 5 9600X",
+  "name": "AMD Ryzen 5 9600X",
+  "specs": {
+   "socket": "AM5",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 3.9,
+   "boost_clock_ghz": 5.4,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 9700X",
+  "name": "AMD Ryzen 7 9700X",
+  "specs": {
+   "socket": "AM5",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 3.8,
+   "boost_clock_ghz": 5.5,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 7 9800X3D",
+  "name": "AMD Ryzen 7 9800X3D",
+  "specs": {
+   "socket": "AM5",
+   "cores": 8,
+   "threads": 16,
+   "base_clock_ghz": 4.7,
+   "boost_clock_ghz": 5.2,
+   "tdp_w": 120,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "AMD",
+  "model": "Ryzen 9 9950X",
+  "name": "AMD Ryzen 9 9950X",
+  "specs": {
+   "socket": "AM5",
+   "cores": 16,
+   "threads": 32,
+   "base_clock_ghz": 4.3,
+   "boost_clock_ghz": 5.7,
+   "tdp_w": 170,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i3-12100F",
+  "name": "Intel Core i3-12100F",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 4,
+   "threads": 8,
+   "base_clock_ghz": 3.3,
+   "boost_clock_ghz": 4.3,
+   "tdp_w": 58,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i5-12400F",
+  "name": "Intel Core i5-12400F",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 2.5,
+   "boost_clock_ghz": 4.4,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i5-12400",
+  "name": "Intel Core i5-12400",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 6,
+   "threads": 12,
+   "base_clock_ghz": 2.5,
+   "boost_clock_ghz": 4.4,
+   "tdp_w": 65,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i5-13400F",
+  "name": "Intel Core i5-13400F",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 10,
+   "threads": 16,
+   "base_clock_ghz": 2.5,
+   "boost_clock_ghz": 4.6,
+   "tdp_w": 65,
+   "has_igpu": false,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i5-13600K",
+  "name": "Intel Core i5-13600K",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 14,
+   "threads": 20,
+   "base_clock_ghz": 3.5,
+   "boost_clock_ghz": 5.1,
+   "tdp_w": 125,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i7-13700K",
+  "name": "Intel Core i7-13700K",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 16,
+   "threads": 24,
+   "base_clock_ghz": 3.4,
+   "boost_clock_ghz": 5.4,
+   "tdp_w": 125,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i5-14600K",
+  "name": "Intel Core i5-14600K",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 14,
+   "threads": 20,
+   "base_clock_ghz": 3.5,
+   "boost_clock_ghz": 5.3,
+   "tdp_w": 125,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i7-14700K",
+  "name": "Intel Core i7-14700K",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 20,
+   "threads": 28,
+   "base_clock_ghz": 3.4,
+   "boost_clock_ghz": 5.6,
+   "tdp_w": 125,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ },
+ {
+  "category": "cpu",
+  "brand": "Intel",
+  "model": "Core i9-14900K",
+  "name": "Intel Core i9-14900K",
+  "specs": {
+   "socket": "LGA1700",
+   "cores": 24,
+   "threads": 32,
+   "base_clock_ghz": 3.2,
+   "boost_clock_ghz": 6.0,
+   "tdp_w": 125,
+   "has_igpu": true,
+   "memory_types": [
+    "DDR4",
+    "DDR5"
+   ]
+  }
+ }
+]

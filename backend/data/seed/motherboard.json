@@ -1,0 +1,274 @@
+[
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "B550-A PRO",
+  "name": "MSI B550-A PRO",
+  "specs": {
+   "socket": "AM4",
+   "chipset": "B550",
+   "form_factor": "ATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 6,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "Gigabyte",
+  "model": "B550M DS3H",
+  "name": "Gigabyte B550M DS3H",
+  "specs": {
+   "socket": "AM4",
+   "chipset": "B550",
+   "form_factor": "mATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "MAG B550 TOMAHAWK",
+  "name": "MSI MAG B550 TOMAHAWK",
+  "specs": {
+   "socket": "AM4",
+   "chipset": "B550",
+   "form_factor": "ATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 6,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "ASUS",
+  "model": "TUF GAMING B550-PLUS WIFI II",
+  "name": "ASUS TUF GAMING B550-PLUS WIFI II",
+  "specs": {
+   "socket": "AM4",
+   "chipset": "B550",
+   "form_factor": "ATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 6,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "ASUS",
+  "model": "ROG STRIX B550-I GAMING",
+  "name": "ASUS ROG STRIX B550-I GAMING",
+  "specs": {
+   "socket": "AM4",
+   "chipset": "B550",
+   "form_factor": "Mini-ITX",
+   "memory_type": "DDR4",
+   "memory_slots": 2,
+   "max_memory_gb": 64,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "PRO B650M-A WIFI",
+  "name": "MSI PRO B650M-A WIFI",
+  "specs": {
+   "socket": "AM5",
+   "chipset": "B650",
+   "form_factor": "mATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 192,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "Gigabyte",
+  "model": "B650M DS3H",
+  "name": "Gigabyte B650M DS3H",
+  "specs": {
+   "socket": "AM5",
+   "chipset": "B650",
+   "form_factor": "mATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "Gigabyte",
+  "model": "B650 AORUS ELITE AX",
+  "name": "Gigabyte B650 AORUS ELITE AX",
+  "specs": {
+   "socket": "AM5",
+   "chipset": "B650",
+   "form_factor": "ATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 192,
+   "m2_slots": 3,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "ASUS",
+  "model": "ROG STRIX X670E-E GAMING WIFI",
+  "name": "ASUS ROG STRIX X670E-E GAMING WIFI",
+  "specs": {
+   "socket": "AM5",
+   "chipset": "X670E",
+   "form_factor": "ATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 4,
+   "sata_ports": 6,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "PRO B660M-A DDR4",
+  "name": "MSI PRO B660M-A DDR4",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "B660",
+   "form_factor": "mATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "Gigabyte",
+  "model": "B760M DS3H DDR4",
+  "name": "Gigabyte B760M DS3H DDR4",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "B760",
+   "form_factor": "mATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": false
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "MAG B760 TOMAHAWK WIFI DDR4",
+  "name": "MSI MAG B760 TOMAHAWK WIFI DDR4",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "B760",
+   "form_factor": "ATX",
+   "memory_type": "DDR4",
+   "memory_slots": 4,
+   "max_memory_gb": 128,
+   "m2_slots": 3,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "MSI",
+  "model": "MAG B760M MORTAR WIFI",
+  "name": "MSI MAG B760M MORTAR WIFI",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "B760",
+   "form_factor": "mATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 192,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "Gigabyte",
+  "model": "Z790 AORUS ELITE AX",
+  "name": "Gigabyte Z790 AORUS ELITE AX",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "Z790",
+   "form_factor": "ATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 192,
+   "m2_slots": 3,
+   "sata_ports": 6,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "ASUS",
+  "model": "ROG STRIX Z790-E GAMING WIFI",
+  "name": "ASUS ROG STRIX Z790-E GAMING WIFI",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "Z790",
+   "form_factor": "ATX",
+   "memory_type": "DDR5",
+   "memory_slots": 4,
+   "max_memory_gb": 192,
+   "m2_slots": 5,
+   "sata_ports": 6,
+   "wifi": true
+  }
+ },
+ {
+  "category": "motherboard",
+  "brand": "ASUS",
+  "model": "ROG STRIX B760-I GAMING WIFI",
+  "name": "ASUS ROG STRIX B760-I GAMING WIFI",
+  "specs": {
+   "socket": "LGA1700",
+   "chipset": "B760",
+   "form_factor": "Mini-ITX",
+   "memory_type": "DDR5",
+   "memory_slots": 2,
+   "max_memory_gb": 96,
+   "m2_slots": 2,
+   "sata_ports": 4,
+   "wifi": true
+  }
+ }
+]

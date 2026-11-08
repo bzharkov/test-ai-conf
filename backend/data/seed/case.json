@@ -1,0 +1,142 @@
+[
+ {
+  "category": "case",
+  "brand": "Corsair",
+  "model": "4000D Airflow",
+  "name": "Corsair 4000D Airflow",
+  "specs": {
+   "supported_mb_form_factors": [
+    "ATX",
+    "mATX",
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 360,
+   "max_cooler_height_mm": 170,
+   "psu_form_factor": "ATX",
+   "radiator_support_mm": [
+    120,
+    140,
+    240,
+    280,
+    360
+   ],
+   "bays_2_5": 2,
+   "bays_3_5": 2
+  }
+ },
+ {
+  "category": "case",
+  "brand": "NZXT",
+  "model": "H5 Flow",
+  "name": "NZXT H5 Flow",
+  "specs": {
+   "supported_mb_form_factors": [
+    "ATX",
+    "mATX",
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 365,
+   "max_cooler_height_mm": 165,
+   "psu_form_factor": "ATX",
+   "radiator_support_mm": [
+    120,
+    140,
+    240,
+    280
+   ],
+   "bays_2_5": 2,
+   "bays_3_5": 1
+  }
+ },
+ {
+  "category": "case",
+  "brand": "Lian Li",
+  "model": "LANCOOL 216",
+  "name": "Lian Li LANCOOL 216",
+  "specs": {
+   "supported_mb_form_factors": [
+    "E-ATX",
+    "ATX",
+    "mATX",
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 392,
+   "max_cooler_height_mm": 180,
+   "psu_form_factor": "ATX",
+   "radiator_support_mm": [
+    120,
+    140,
+    240,
+    280,
+    360
+   ],
+   "bays_2_5": 6,
+   "bays_3_5": 2
+  }
+ },
+ {
+  "category": "case",
+  "brand": "DeepCool",
+  "model": "CC560",
+  "name": "DeepCool CC560",
+  "specs": {
+   "supported_mb_form_factors": [
+    "ATX",
+    "mATX",
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 370,
+   "max_cooler_height_mm": 175,
+   "psu_form_factor": "ATX",
+   "radiator_support_mm": [
+    120,
+    240,
+    360
+   ],
+   "bays_2_5": 2,
+   "bays_3_5": 1
+  }
+ },
+ {
+  "category": "case",
+  "brand": "Cooler Master",
+  "model": "NR200P",
+  "name": "Cooler Master NR200P",
+  "specs": {
+   "supported_mb_form_factors": [
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 330,
+   "max_cooler_height_mm": 155,
+   "psu_form_factor": "SFX",
+   "radiator_support_mm": [
+    120,
+    140,
+    240,
+    280
+   ],
+   "bays_2_5": 2,
+   "bays_3_5": 0
+  }
+ },
+ {
+  "category": "case",
+  "brand": "Cooler Master",
+  "model": "MasterBox Q300L",
+  "name": "Cooler Master MasterBox Q300L",
+  "specs": {
+   "supported_mb_form_factors": [
+    "mATX",
+    "Mini-ITX"
+   ],
+   "max_gpu_length_mm": 360,
+   "max_cooler_height_mm": 159,
+   "psu_form_factor": "ATX",
+   "radiator_support_mm": [
+    120
+   ],
+   "bays_2_5": 2,
+   "bays_3_5": 1
+  }
+ }
+]

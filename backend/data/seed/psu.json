@@ -1,0 +1,122 @@
+[
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "CV450",
+  "name": "Corsair CV450",
+  "specs": {
+   "wattage_w": 450,
+   "form_factor": "ATX",
+   "efficiency": "80+ Bronze",
+   "modular": false
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "CX550",
+  "name": "Corsair CX550",
+  "specs": {
+   "wattage_w": 550,
+   "form_factor": "ATX",
+   "efficiency": "80+ Bronze",
+   "modular": false
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "CX650",
+  "name": "Corsair CX650",
+  "specs": {
+   "wattage_w": 650,
+   "form_factor": "ATX",
+   "efficiency": "80+ Bronze",
+   "modular": false
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "MSI",
+  "model": "MAG A650BN",
+  "name": "MSI MAG A650BN",
+  "specs": {
+   "wattage_w": 650,
+   "form_factor": "ATX",
+   "efficiency": "80+ Bronze",
+   "modular": false
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Seasonic",
+  "model": "Focus GX-650",
+  "name": "Seasonic Focus GX-650",
+  "specs": {
+   "wattage_w": 650,
+   "form_factor": "ATX",
+   "efficiency": "80+ Gold",
+   "modular": true
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "be quiet!",
+  "model": "Pure Power 12 M 750W",
+  "name": "be quiet! Pure Power 12 M 750W",
+  "specs": {
+   "wattage_w": 750,
+   "form_factor": "ATX",
+   "efficiency": "80+ Gold",
+   "modular": true
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "RM750e",
+  "name": "Corsair RM750e",
+  "specs": {
+   "wattage_w": 750,
+   "form_factor": "ATX",
+   "efficiency": "80+ Gold",
+   "modular": true
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "RM850e",
+  "name": "Corsair RM850e",
+  "specs": {
+   "wattage_w": 850,
+   "form_factor": "ATX",
+   "efficiency": "80+ Gold",
+   "modular": true
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "RM1000e",
+  "name": "Corsair RM1000e",
+  "specs": {
+   "wattage_w": 1000,
+   "form_factor": "ATX",
+   "efficiency": "80+ Gold",
+   "modular": true
+  }
+ },
+ {
+  "category": "psu",
+  "brand": "Corsair",
+  "model": "SF750",
+  "name": "Corsair SF750",
+  "specs": {
+   "wattage_w": 750,
+   "form_factor": "SFX",
+   "efficiency": "80+ Platinum",
+   "modular": true
+  }
+ }
+]

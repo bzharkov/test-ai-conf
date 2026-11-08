@@ -1,0 +1,146 @@
+[
+ {
+  "category": "ram",
+  "brand": "Kingston",
+  "model": "FURY Beast 16GB (2x8GB) DDR4-3200",
+  "name": "Kingston FURY Beast 16GB (2x8GB) DDR4-3200",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 16,
+   "modules": 2,
+   "speed_mhz": 3200
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Kingston",
+  "model": "FURY Beast 32GB (2x16GB) DDR4-3200",
+  "name": "Kingston FURY Beast 32GB (2x16GB) DDR4-3200",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 3200
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Kingston",
+  "model": "FURY Beast 64GB (2x32GB) DDR4-3200",
+  "name": "Kingston FURY Beast 64GB (2x32GB) DDR4-3200",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 64,
+   "modules": 2,
+   "speed_mhz": 3200
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Corsair",
+  "model": "Vengeance LPX 16GB (2x8GB) DDR4-3200",
+  "name": "Corsair Vengeance LPX 16GB (2x8GB) DDR4-3200",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 16,
+   "modules": 2,
+   "speed_mhz": 3200
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Corsair",
+  "model": "Vengeance LPX 32GB (2x16GB) DDR4-3600",
+  "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR4-3600",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 3600
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "G.Skill",
+  "model": "Ripjaws V 16GB (2x8GB) DDR4-3600",
+  "name": "G.Skill Ripjaws V 16GB (2x8GB) DDR4-3600",
+  "specs": {
+   "type": "DDR4",
+   "capacity_gb_total": 16,
+   "modules": 2,
+   "speed_mhz": 3600
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Kingston",
+  "model": "FURY Beast 16GB (2x8GB) DDR5-5600",
+  "name": "Kingston FURY Beast 16GB (2x8GB) DDR5-5600",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 16,
+   "modules": 2,
+   "speed_mhz": 5600
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Kingston",
+  "model": "FURY Beast 32GB (2x16GB) DDR5-5600",
+  "name": "Kingston FURY Beast 32GB (2x16GB) DDR5-5600",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 5600
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Crucial",
+  "model": "Pro 32GB (2x16GB) DDR5-5600",
+  "name": "Crucial Pro 32GB (2x16GB) DDR5-5600",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 5600
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Corsair",
+  "model": "Vengeance 32GB (2x16GB) DDR5-6000",
+  "name": "Corsair Vengeance 32GB (2x16GB) DDR5-6000",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 6000
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "G.Skill",
+  "model": "Trident Z5 RGB 32GB (2x16GB) DDR5-6000",
+  "name": "G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5-6000",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 32,
+   "modules": 2,
+   "speed_mhz": 6000
+  }
+ },
+ {
+  "category": "ram",
+  "brand": "Corsair",
+  "model": "Vengeance 64GB (2x32GB) DDR5-6000",
+  "name": "Corsair Vengeance 64GB (2x32GB) DDR5-6000",
+  "specs": {
+   "type": "DDR5",
+   "capacity_gb_total": 64,
+   "modules": 2,
+   "speed_mhz": 6000
+  }
+ }
+]

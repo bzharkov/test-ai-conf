@@ -42,10 +42,18 @@ async def health() -> dict[str, Any]:
     llm = {"ok": s.llm_available, "enabled": s.llm_enabled, "configured": s.llm_available}
     # LLM is optional (fallback parser exists), so it does not affect overall status.
     status = "ok" if db["ok"] and redis["ok"] else "degraded"
+    from app.catalog.repository import get_catalog
+
+    try:
+        cat = await get_catalog()
+        size, source = len(cat), cat.mode
+    except Exception:
+        size, source = db.get("catalog_size"), None
     return {
         "status": status,
         "db": db,
         "redis": redis,
         "llm": llm,
-        "catalog_size": db.get("catalog_size"),
+        "catalog_size": size,
+        "catalog_source": source,
     }

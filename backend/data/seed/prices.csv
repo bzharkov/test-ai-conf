@@ -1,0 +1,109 @@
+sku_or_name,price_rub,in_stock,source,updated_at
+AMD Ryzen 5 5500,6000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 5600,8500,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 5600G,9500,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 5600X,10000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 5700X,13000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 5800X3D,24000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 7500F,12500,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 7600,17000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 7700,22000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 7800X3D,38000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 9 7900X,33000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 9 7950X,48000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 5 9600X,21000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 9700X,31000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 7 9800X3D,52000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Ryzen 9 9950X,55000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i3-12100F,7000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i5-12400F,10000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i5-12400,12500,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i5-13400F,16000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i5-13600K,25000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i7-13700K,33000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i5-14600K,27000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i7-14700K,38000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Core i9-14900K,52000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI B550-A PRO,10000,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte B550M DS3H,8500,true,demo-seed (ориентировочная цена),2026-11-01
+MSI MAG B550 TOMAHAWK,14000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS TUF GAMING B550-PLUS WIFI II,15000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS ROG STRIX B550-I GAMING,17000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI PRO B650M-A WIFI,13000,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte B650M DS3H,9500,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte B650 AORUS ELITE AX,19000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS ROG STRIX X670E-E GAMING WIFI,36000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI PRO B660M-A DDR4,8500,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte B760M DS3H DDR4,8000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI MAG B760 TOMAHAWK WIFI DDR4,16000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI MAG B760M MORTAR WIFI,17000,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte Z790 AORUS ELITE AX,25000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS ROG STRIX Z790-E GAMING WIFI,40000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS ROG STRIX B760-I GAMING WIFI,23000,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston FURY Beast 16GB (2x8GB) DDR4-3200,3800,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston FURY Beast 32GB (2x16GB) DDR4-3200,6800,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston FURY Beast 64GB (2x32GB) DDR4-3200,13000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair Vengeance LPX 16GB (2x8GB) DDR4-3200,3700,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair Vengeance LPX 32GB (2x16GB) DDR4-3600,6500,true,demo-seed (ориентировочная цена),2026-11-01
+G.Skill Ripjaws V 16GB (2x8GB) DDR4-3600,3900,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston FURY Beast 16GB (2x8GB) DDR5-5600,4800,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston FURY Beast 32GB (2x16GB) DDR5-5600,8500,true,demo-seed (ориентировочная цена),2026-11-01
+Crucial Pro 32GB (2x16GB) DDR5-5600,8000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair Vengeance 32GB (2x16GB) DDR5-6000,9500,true,demo-seed (ориентировочная цена),2026-11-01
+G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5-6000,11000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair Vengeance 64GB (2x32GB) DDR5-6000,20000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI GeForce RTX 3060 VENTUS 2X 12G,28000,true,demo-seed (ориентировочная цена),2026-11-01
+MSI GeForce RTX 4060 VENTUS 2X BLACK 8G OC,30000,true,demo-seed (ориентировочная цена),2026-11-01
+ASUS DUAL GeForce RTX 4060 Ti 8GB,40000,true,demo-seed (ориентировочная цена),2026-11-01
+Gigabyte GeForce RTX 4070 SUPER WINDFORCE OC 12G,62000,true,demo-seed (ориентировочная цена),2026-11-01
+NVIDIA GeForce RTX 5070 Founders Edition,65000,true,demo-seed (ориентировочная цена),2026-11-01
+NVIDIA GeForce RTX 4080 SUPER Founders Edition,115000,true,demo-seed (ориентировочная цена),2026-11-01
+NVIDIA GeForce RTX 5080 Founders Edition,125000,true,demo-seed (ориентировочная цена),2026-11-01
+NVIDIA GeForce RTX 4090 Founders Edition,230000,true,demo-seed (ориентировочная цена),2026-11-01
+NVIDIA GeForce RTX 5090 Founders Edition,260000,true,demo-seed (ориентировочная цена),2026-11-01
+Sapphire PULSE Radeon RX 7600 8GB,24000,true,demo-seed (ориентировочная цена),2026-11-01
+Sapphire PULSE Radeon RX 7800 XT 16GB,52000,true,demo-seed (ориентировочная цена),2026-11-01
+AMD Radeon RX 7900 XTX,90000,true,demo-seed (ориентировочная цена),2026-11-01
+Intel Arc B580 Limited Edition,26000,true,demo-seed (ориентировочная цена),2026-11-01
+WD Blue SN580 500GB,3200,true,demo-seed (ориентировочная цена),2026-11-01
+WD Blue SN580 1TB,5500,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston NV2 500GB,3000,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston NV2 1TB,5000,true,demo-seed (ориентировочная цена),2026-11-01
+Kingston NV2 2TB,9000,true,demo-seed (ориентировочная цена),2026-11-01
+Crucial P3 Plus 1TB,6500,true,demo-seed (ориентировочная цена),2026-11-01
+Crucial P3 Plus 2TB,11500,true,demo-seed (ориентировочная цена),2026-11-01
+Samsung 990 EVO 1TB,8000,true,demo-seed (ориентировочная цена),2026-11-01
+Samsung 990 EVO 2TB,14500,true,demo-seed (ориентировочная цена),2026-11-01
+Samsung 990 PRO 1TB,11000,true,demo-seed (ориентировочная цена),2026-11-01
+Samsung 990 PRO 2TB,18000,true,demo-seed (ориентировочная цена),2026-11-01
+WD Black SN850X 1TB,10000,true,demo-seed (ориентировочная цена),2026-11-01
+WD Black SN850X 2TB,17000,true,demo-seed (ориентировочная цена),2026-11-01
+WD Black SN850X 4TB,33000,true,demo-seed (ориентировочная цена),2026-11-01
+Samsung 870 EVO 1TB,8500,true,demo-seed (ориентировочная цена),2026-11-01
+Crucial MX500 500GB,4200,true,demo-seed (ориентировочная цена),2026-11-01
+Seagate BarraCuda 2TB,5500,true,demo-seed (ориентировочная цена),2026-11-01
+WD Blue 1TB WD10EZEX,3800,true,demo-seed (ориентировочная цена),2026-11-01
+DeepCool AK400,2200,true,demo-seed (ориентировочная цена),2026-11-01
+DeepCool AG400,1600,true,demo-seed (ориентировочная цена),2026-11-01
+DeepCool AK620,5000,true,demo-seed (ориентировочная цена),2026-11-01
+Thermalright Peerless Assassin 120 SE,3200,true,demo-seed (ориентировочная цена),2026-11-01
+Thermalright Assassin X 120 Refined SE,1500,true,demo-seed (ориентировочная цена),2026-11-01
+Noctua NH-D15,11000,true,demo-seed (ориентировочная цена),2026-11-01
+Arctic Liquid Freezer III 240,8500,true,demo-seed (ориентировочная цена),2026-11-01
+Arctic Liquid Freezer III 360,10500,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair CV450,3500,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair CX550,5000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair CX650,5800,true,demo-seed (ориентировочная цена),2026-11-01
+MSI MAG A650BN,5300,true,demo-seed (ориентировочная цена),2026-11-01
+Seasonic Focus GX-650,11000,true,demo-seed (ориентировочная цена),2026-11-01
+be quiet! Pure Power 12 M 750W,10500,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair RM750e,11000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair RM850e,13000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair RM1000e,17000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair SF750,18000,true,demo-seed (ориентировочная цена),2026-11-01
+Corsair 4000D Airflow,8000,true,demo-seed (ориентировочная цена),2026-11-01
+NZXT H5 Flow,8500,true,demo-seed (ориентировочная цена),2026-11-01
+Lian Li LANCOOL 216,11000,true,demo-seed (ориентировочная цена),2026-11-01
+DeepCool CC560,4500,true,demo-seed (ориентировочная цена),2026-11-01
+Cooler Master NR200P,11500,true,demo-seed (ориентировочная цена),2026-11-01
+Cooler Master MasterBox Q300L,4000,true,demo-seed (ориентировочная цена),2026-11-01

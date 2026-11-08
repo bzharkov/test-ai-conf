@@ -1,0 +1,184 @@
+[
+ {
+  "category": "gpu",
+  "brand": "MSI",
+  "model": "GeForce RTX 3060 VENTUS 2X 12G",
+  "name": "MSI GeForce RTX 3060 VENTUS 2X 12G",
+  "specs": {
+   "chipset": "GeForce RTX 3060",
+   "vram_gb": 12,
+   "length_mm": 235,
+   "tdp_w": 170,
+   "slots": 2,
+   "recommended_psu_w": 550
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "MSI",
+  "model": "GeForce RTX 4060 VENTUS 2X BLACK 8G OC",
+  "name": "MSI GeForce RTX 4060 VENTUS 2X BLACK 8G OC",
+  "specs": {
+   "chipset": "GeForce RTX 4060",
+   "vram_gb": 8,
+   "length_mm": 199,
+   "tdp_w": 115,
+   "slots": 2,
+   "recommended_psu_w": 550
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "ASUS",
+  "model": "DUAL GeForce RTX 4060 Ti 8GB",
+  "name": "ASUS DUAL GeForce RTX 4060 Ti 8GB",
+  "specs": {
+   "chipset": "GeForce RTX 4060 Ti",
+   "vram_gb": 8,
+   "length_mm": 227,
+   "tdp_w": 160,
+   "slots": 2.5,
+   "recommended_psu_w": 550
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "Gigabyte",
+  "model": "GeForce RTX 4070 SUPER WINDFORCE OC 12G",
+  "name": "Gigabyte GeForce RTX 4070 SUPER WINDFORCE OC 12G",
+  "specs": {
+   "chipset": "GeForce RTX 4070 SUPER",
+   "vram_gb": 12,
+   "length_mm": 261,
+   "tdp_w": 220,
+   "slots": 2.5,
+   "recommended_psu_w": 650
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "NVIDIA",
+  "model": "GeForce RTX 5070 Founders Edition",
+  "name": "NVIDIA GeForce RTX 5070 Founders Edition",
+  "specs": {
+   "chipset": "GeForce RTX 5070",
+   "vram_gb": 12,
+   "length_mm": 242,
+   "tdp_w": 250,
+   "slots": 2,
+   "recommended_psu_w": 650
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "NVIDIA",
+  "model": "GeForce RTX 4080 SUPER Founders Edition",
+  "name": "NVIDIA GeForce RTX 4080 SUPER Founders Edition",
+  "specs": {
+   "chipset": "GeForce RTX 4080 SUPER",
+   "vram_gb": 16,
+   "length_mm": 304,
+   "tdp_w": 320,
+   "slots": 3,
+   "recommended_psu_w": 750
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "NVIDIA",
+  "model": "GeForce RTX 5080 Founders Edition",
+  "name": "NVIDIA GeForce RTX 5080 Founders Edition",
+  "specs": {
+   "chipset": "GeForce RTX 5080",
+   "vram_gb": 16,
+   "length_mm": 304,
+   "tdp_w": 360,
+   "slots": 2,
+   "recommended_psu_w": 850
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "NVIDIA",
+  "model": "GeForce RTX 4090 Founders Edition",
+  "name": "NVIDIA GeForce RTX 4090 Founders Edition",
+  "specs": {
+   "chipset": "GeForce RTX 4090",
+   "vram_gb": 24,
+   "length_mm": 304,
+   "tdp_w": 450,
+   "slots": 3,
+   "recommended_psu_w": 850
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "NVIDIA",
+  "model": "GeForce RTX 5090 Founders Edition",
+  "name": "NVIDIA GeForce RTX 5090 Founders Edition",
+  "specs": {
+   "chipset": "GeForce RTX 5090",
+   "vram_gb": 32,
+   "length_mm": 304,
+   "tdp_w": 575,
+   "slots": 2,
+   "recommended_psu_w": 1000
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "Sapphire",
+  "model": "PULSE Radeon RX 7600 8GB",
+  "name": "Sapphire PULSE Radeon RX 7600 8GB",
+  "specs": {
+   "chipset": "Radeon RX 7600",
+   "vram_gb": 8,
+   "length_mm": 240,
+   "tdp_w": 165,
+   "slots": 2,
+   "recommended_psu_w": 550
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "Sapphire",
+  "model": "PULSE Radeon RX 7800 XT 16GB",
+  "name": "Sapphire PULSE Radeon RX 7800 XT 16GB",
+  "specs": {
+   "chipset": "Radeon RX 7800 XT",
+   "vram_gb": 16,
+   "length_mm": 280,
+   "tdp_w": 263,
+   "slots": 2.5,
+   "recommended_psu_w": 700
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "AMD",
+  "model": "Radeon RX 7900 XTX",
+  "name": "AMD Radeon RX 7900 XTX",
+  "specs": {
+   "chipset": "Radeon RX 7900 XTX",
+   "vram_gb": 24,
+   "length_mm": 287,
+   "tdp_w": 355,
+   "slots": 2.5,
+   "recommended_psu_w": 800
+  }
+ },
+ {
+  "category": "gpu",
+  "brand": "Intel",
+  "model": "Arc B580 Limited Edition",
+  "name": "Intel Arc B580 Limited Edition",
+  "specs": {
+   "chipset": "Arc B580",
+   "vram_gb": 12,
+   "length_mm": 272,
+   "tdp_w": 190,
+   "slots": 2,
+   "recommended_psu_w": 600
+  }
+ }
+]

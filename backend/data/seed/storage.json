@@ -1,0 +1,218 @@
+[
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Blue SN580 500GB",
+  "name": "WD Blue SN580 500GB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 500
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Blue SN580 1TB",
+  "name": "WD Blue SN580 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Kingston",
+  "model": "NV2 500GB",
+  "name": "Kingston NV2 500GB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 500
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Kingston",
+  "model": "NV2 1TB",
+  "name": "Kingston NV2 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Kingston",
+  "model": "NV2 2TB",
+  "name": "Kingston NV2 2TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Crucial",
+  "model": "P3 Plus 1TB",
+  "name": "Crucial P3 Plus 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Crucial",
+  "model": "P3 Plus 2TB",
+  "name": "Crucial P3 Plus 2TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Samsung",
+  "model": "990 EVO 1TB",
+  "name": "Samsung 990 EVO 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Samsung",
+  "model": "990 EVO 2TB",
+  "name": "Samsung 990 EVO 2TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Samsung",
+  "model": "990 PRO 1TB",
+  "name": "Samsung 990 PRO 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Samsung",
+  "model": "990 PRO 2TB",
+  "name": "Samsung 990 PRO 2TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Black SN850X 1TB",
+  "name": "WD Black SN850X 1TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Black SN850X 2TB",
+  "name": "WD Black SN850X 2TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Black SN850X 4TB",
+  "name": "WD Black SN850X 4TB",
+  "specs": {
+   "type": "nvme",
+   "interface": "PCIe 4.0 x4",
+   "form_factor": "M.2",
+   "capacity_gb": 4000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Samsung",
+  "model": "870 EVO 1TB",
+  "name": "Samsung 870 EVO 1TB",
+  "specs": {
+   "type": "sata_ssd",
+   "interface": "SATA 6Gb/s",
+   "form_factor": "2.5",
+   "capacity_gb": 1000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Crucial",
+  "model": "MX500 500GB",
+  "name": "Crucial MX500 500GB",
+  "specs": {
+   "type": "sata_ssd",
+   "interface": "SATA 6Gb/s",
+   "form_factor": "2.5",
+   "capacity_gb": 500
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "Seagate",
+  "model": "BarraCuda 2TB",
+  "name": "Seagate BarraCuda 2TB",
+  "specs": {
+   "type": "hdd",
+   "interface": "SATA 6Gb/s",
+   "form_factor": "3.5",
+   "capacity_gb": 2000
+  }
+ },
+ {
+  "category": "storage",
+  "brand": "WD",
+  "model": "Blue 1TB WD10EZEX",
+  "name": "WD Blue 1TB WD10EZEX",
+  "specs": {
+   "type": "hdd",
+   "interface": "SATA 6Gb/s",
+   "form_factor": "3.5",
+   "capacity_gb": 1000
+  }
+ }
+]

@@ -22,6 +22,17 @@ class Settings(BaseSettings):
     catalog_source: str = "seed"
 
     default_budget_rub: int = 100000
+    seed_dir: str = "data/seed"
+    perf_scores_path: str = "data/perf_scores.csv"
+
+    # power model (TZ section 7)
+    power_k_cpu: float = 1.35
+    power_margin: float = 1.3
+
+    # recommender
+    beam_width: int = 40
+    beam_time_limit_s: float = 4.0
+    rate_limit_per_min: int = 20
     cors_origins: str = "http://localhost:5173"
 
     @property
