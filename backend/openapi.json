@@ -1,0 +1,1830 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "AI PC Configuration",
+  "version": "0.2.0"
+ },
+ "paths": {
+  "/api/v1/health": {
+   "get": {
+    "summary": "Health",
+    "operationId": "health_api_v1_health_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Health Api V1 Health Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/configure": {
+   "post": {
+    "summary": "Configure",
+    "operationId": "configure_api_v1_configure_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ConfigureRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ConfigureResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/builds/{build_id}": {
+   "get": {
+    "summary": "Get Build",
+    "operationId": "get_build_api_v1_builds__build_id__get",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/BuildOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/builds/{build_id}/explanation/stream": {
+   "get": {
+    "summary": "Explanation Stream",
+    "operationId": "explanation_stream_api_v1_builds__build_id__explanation_stream_get",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/builds/{build_id}/replace": {
+   "post": {
+    "summary": "Replace",
+    "operationId": "replace_api_v1_builds__build_id__replace_post",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ReplaceRequest"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ReplaceResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/builds/{build_id}/alternatives": {
+   "get": {
+    "summary": "Alternatives",
+    "operationId": "alternatives_api_v1_builds__build_id__alternatives_get",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     },
+     {
+      "name": "category",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Category"
+      }
+     },
+     {
+      "name": "intent",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string",
+       "pattern": "^(cheaper|better|similar)$",
+       "default": "similar",
+       "title": "Intent"
+      }
+     },
+     {
+      "name": "k",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 6,
+       "minimum": 1,
+       "default": 3,
+       "title": "K"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/AlternativeOut"
+         },
+         "title": "Response Alternatives Api V1 Builds  Build Id  Alternatives Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/builds/{build_id}/chat": {
+   "post": {
+    "summary": "Chat",
+    "operationId": "chat_api_v1_builds__build_id__chat_post",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ChatRequest"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "get": {
+    "summary": "Chat History",
+    "operationId": "chat_history_api_v1_builds__build_id__chat_get",
+    "parameters": [
+     {
+      "name": "build_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Build Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ChatMessageOut"
+         },
+         "title": "Response Chat History Api V1 Builds  Build Id  Chat Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/compare": {
+   "post": {
+    "summary": "Compare",
+    "operationId": "compare_api_v1_compare_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/CompareRequest"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/CompareResponse"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/components": {
+   "get": {
+    "summary": "Components",
+    "operationId": "components_api_v1_components_get",
+    "parameters": [
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Category"
+      }
+     },
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Q"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 100,
+       "minimum": 1,
+       "default": 20,
+       "title": "Limit"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ComponentOut"
+         },
+         "title": "Response Components Api V1 Components Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/components/{component_id}": {
+   "get": {
+    "summary": "Component",
+    "operationId": "component_api_v1_components__component_id__get",
+    "parameters": [
+     {
+      "name": "component_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "integer",
+       "title": "Component Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ComponentOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/history": {
+   "get": {
+    "summary": "History",
+    "operationId": "history_api_v1_history_get",
+    "parameters": [
+     {
+      "name": "session_id",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "minLength": 1,
+       "maxLength": 64,
+       "title": "Session Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/HistoryItem"
+         },
+         "title": "Response History Api V1 History Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "AlternativeOut": {
+    "properties": {
+     "component_id": {
+      "type": "integer",
+      "title": "Component Id"
+     },
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "price_rub": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Rub"
+     },
+     "price_delta_rub": {
+      "type": "number",
+      "title": "Price Delta Rub"
+     },
+     "total_delta_rub": {
+      "type": "number",
+      "title": "Total Delta Rub"
+     },
+     "perf_delta_pct": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Perf Delta Pct"
+     },
+     "compat_ok": {
+      "type": "boolean",
+      "title": "Compat Ok"
+     },
+     "notes": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Notes"
+     },
+     "extra_component_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Extra Component Id"
+     },
+     "extra_component_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Extra Component Name"
+     }
+    },
+    "type": "object",
+    "required": [
+     "component_id",
+     "name",
+     "category",
+     "price_rub",
+     "price_delta_rub",
+     "total_delta_rub",
+     "perf_delta_pct",
+     "compat_ok",
+     "notes"
+    ],
+    "title": "AlternativeOut"
+   },
+   "BuildOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "total_price": {
+      "type": "number",
+      "title": "Total Price"
+     },
+     "budget_rub": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Budget Rub"
+     },
+     "budget_share": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Budget Share"
+     },
+     "over_budget": {
+      "type": "boolean",
+      "title": "Over Budget"
+     },
+     "compat_ok": {
+      "type": "boolean",
+      "title": "Compat Ok"
+     },
+     "prices_are_demo": {
+      "type": "boolean",
+      "title": "Prices Are Demo"
+     },
+     "key_components": {
+      "$ref": "#/components/schemas/KeyComponents"
+     },
+     "warnings": {
+      "items": {
+       "$ref": "#/components/schemas/Warn"
+      },
+      "type": "array",
+      "title": "Warnings"
+     },
+     "request_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Request Id"
+     },
+     "created_at": {
+      "type": "string",
+      "title": "Created At"
+     },
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/ComponentOut"
+      },
+      "type": "array",
+      "title": "Items"
+     },
+     "power": {
+      "$ref": "#/components/schemas/PowerOut"
+     },
+     "compatibility": {
+      "$ref": "#/components/schemas/Compatibility"
+     },
+     "explanation": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Explanation"
+     },
+     "requirements": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/Requirements"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "label",
+     "total_price",
+     "budget_rub",
+     "budget_share",
+     "over_budget",
+     "compat_ok",
+     "prices_are_demo",
+     "key_components",
+     "warnings",
+     "request_id",
+     "created_at",
+     "items",
+     "power",
+     "compatibility",
+     "explanation"
+    ],
+    "title": "BuildOut"
+   },
+   "BuildSummary": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "total_price": {
+      "type": "number",
+      "title": "Total Price"
+     },
+     "budget_rub": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Budget Rub"
+     },
+     "budget_share": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Budget Share"
+     },
+     "over_budget": {
+      "type": "boolean",
+      "title": "Over Budget"
+     },
+     "compat_ok": {
+      "type": "boolean",
+      "title": "Compat Ok"
+     },
+     "prices_are_demo": {
+      "type": "boolean",
+      "title": "Prices Are Demo"
+     },
+     "key_components": {
+      "$ref": "#/components/schemas/KeyComponents"
+     },
+     "warnings": {
+      "items": {
+       "$ref": "#/components/schemas/Warn"
+      },
+      "type": "array",
+      "title": "Warnings"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "label",
+     "total_price",
+     "budget_rub",
+     "budget_share",
+     "over_budget",
+     "compat_ok",
+     "prices_are_demo",
+     "key_components",
+     "warnings"
+    ],
+    "title": "BuildSummary"
+   },
+   "ChatMessageOut": {
+    "properties": {
+     "role": {
+      "type": "string",
+      "title": "Role"
+     },
+     "content": {
+      "type": "string",
+      "title": "Content"
+     },
+     "created_at": {
+      "type": "string",
+      "title": "Created At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "role",
+     "content",
+     "created_at"
+    ],
+    "title": "ChatMessageOut"
+   },
+   "ChatRequest": {
+    "properties": {
+     "message": {
+      "type": "string",
+      "maxLength": 1000,
+      "minLength": 1,
+      "title": "Message"
+     },
+     "session_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Session Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "message"
+    ],
+    "title": "ChatRequest"
+   },
+   "CompareCell": {
+    "properties": {
+     "name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Name"
+     },
+     "price_rub": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Rub"
+     }
+    },
+    "type": "object",
+    "required": [
+     "name",
+     "price_rub"
+    ],
+    "title": "CompareCell"
+   },
+   "CompareRequest": {
+    "properties": {
+     "build_ids": {
+      "items": {
+       "type": "integer"
+      },
+      "type": "array",
+      "maxItems": 3,
+      "minItems": 2,
+      "title": "Build Ids"
+     }
+    },
+    "type": "object",
+    "required": [
+     "build_ids"
+    ],
+    "title": "CompareRequest"
+   },
+   "CompareResponse": {
+    "properties": {
+     "builds": {
+      "items": {
+       "$ref": "#/components/schemas/BuildSummary"
+      },
+      "type": "array",
+      "title": "Builds"
+     },
+     "rows": {
+      "items": {
+       "$ref": "#/components/schemas/CompareRow"
+      },
+      "type": "array",
+      "title": "Rows"
+     },
+     "totals": {
+      "items": {
+       "type": "number"
+      },
+      "type": "array",
+      "title": "Totals"
+     },
+     "power_w": {
+      "items": {
+       "type": "integer"
+      },
+      "type": "array",
+      "title": "Power W"
+     }
+    },
+    "type": "object",
+    "required": [
+     "builds",
+     "rows",
+     "totals",
+     "power_w"
+    ],
+    "title": "CompareResponse"
+   },
+   "CompareRow": {
+    "properties": {
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "category_ru": {
+      "type": "string",
+      "title": "Category Ru"
+     },
+     "cells": {
+      "items": {
+       "$ref": "#/components/schemas/CompareCell"
+      },
+      "type": "array",
+      "title": "Cells"
+     },
+     "differs": {
+      "type": "boolean",
+      "title": "Differs"
+     }
+    },
+    "type": "object",
+    "required": [
+     "category",
+     "category_ru",
+     "cells",
+     "differs"
+    ],
+    "title": "CompareRow"
+   },
+   "Compatibility": {
+    "properties": {
+     "ok": {
+      "type": "boolean",
+      "title": "Ok"
+     },
+     "rules": {
+      "items": {
+       "$ref": "#/components/schemas/RuleStatus"
+      },
+      "type": "array",
+      "title": "Rules"
+     },
+     "issues": {
+      "items": {
+       "$ref": "#/components/schemas/IssueOut"
+      },
+      "type": "array",
+      "title": "Issues"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ok",
+     "rules",
+     "issues"
+    ],
+    "title": "Compatibility"
+   },
+   "ComponentOut": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "category_ru": {
+      "type": "string",
+      "title": "Category Ru"
+     },
+     "brand": {
+      "type": "string",
+      "title": "Brand"
+     },
+     "model": {
+      "type": "string",
+      "title": "Model"
+     },
+     "name": {
+      "type": "string",
+      "title": "Name"
+     },
+     "specs": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Specs"
+     },
+     "perf_score": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Perf Score"
+     },
+     "perf_multicore": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Perf Multicore"
+     },
+     "perf_estimated": {
+      "type": "boolean",
+      "title": "Perf Estimated",
+      "default": false
+     },
+     "price_rub": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Rub"
+     },
+     "in_stock": {
+      "type": "boolean",
+      "title": "In Stock",
+      "default": false
+     },
+     "price_source": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Source"
+     },
+     "price_updated_at": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Price Updated At"
+     },
+     "price_is_demo": {
+      "type": "boolean",
+      "title": "Price Is Demo",
+      "default": false
+     },
+     "source": {
+      "type": "string",
+      "title": "Source"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "category",
+     "category_ru",
+     "brand",
+     "model",
+     "name",
+     "specs",
+     "source"
+    ],
+    "title": "ComponentOut"
+   },
+   "ConfigureRequest": {
+    "properties": {
+     "text": {
+      "type": "string",
+      "maxLength": 1500,
+      "minLength": 3,
+      "title": "Text"
+     },
+     "filters": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Filters"
+     },
+     "requirements": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/Requirements"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "session_id": {
+      "type": "string",
+      "maxLength": 64,
+      "minLength": 1,
+      "title": "Session Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "text",
+     "session_id"
+    ],
+    "title": "ConfigureRequest"
+   },
+   "ConfigureResponse": {
+    "properties": {
+     "request_id": {
+      "type": "integer",
+      "title": "Request Id"
+     },
+     "requirements": {
+      "$ref": "#/components/schemas/Requirements"
+     },
+     "builds": {
+      "items": {
+       "$ref": "#/components/schemas/BuildSummary"
+      },
+      "type": "array",
+      "title": "Builds"
+     },
+     "warnings": {
+      "items": {
+       "$ref": "#/components/schemas/Warn"
+      },
+      "type": "array",
+      "title": "Warnings"
+     },
+     "min_feasible_price": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Min Feasible Price"
+     }
+    },
+    "type": "object",
+    "required": [
+     "request_id",
+     "requirements",
+     "builds",
+     "warnings"
+    ],
+    "title": "ConfigureResponse"
+   },
+   "GamingReq": {
+    "properties": {
+     "resolution": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "1080p",
+         "1440p",
+         "4k"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Resolution"
+     },
+     "target_fps": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Target Fps"
+     },
+     "titles": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Titles"
+     }
+    },
+    "type": "object",
+    "title": "GamingReq"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "HistoryBuild": {
+    "properties": {
+     "id": {
+      "type": "integer",
+      "title": "Id"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "total_price": {
+      "type": "number",
+      "title": "Total Price"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "label",
+     "total_price"
+    ],
+    "title": "HistoryBuild"
+   },
+   "HistoryItem": {
+    "properties": {
+     "request_id": {
+      "type": "integer",
+      "title": "Request Id"
+     },
+     "text": {
+      "type": "string",
+      "title": "Text"
+     },
+     "created_at": {
+      "type": "string",
+      "title": "Created At"
+     },
+     "builds": {
+      "items": {
+       "$ref": "#/components/schemas/HistoryBuild"
+      },
+      "type": "array",
+      "title": "Builds"
+     }
+    },
+    "type": "object",
+    "required": [
+     "request_id",
+     "text",
+     "created_at",
+     "builds"
+    ],
+    "title": "HistoryItem"
+   },
+   "IssueOut": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "title": "Code"
+     },
+     "severity": {
+      "type": "string",
+      "enum": [
+       "error",
+       "warning"
+      ],
+      "title": "Severity"
+     },
+     "message_ru": {
+      "type": "string",
+      "title": "Message Ru"
+     },
+     "components": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Components"
+     }
+    },
+    "type": "object",
+    "required": [
+     "code",
+     "severity",
+     "message_ru",
+     "components"
+    ],
+    "title": "IssueOut"
+   },
+   "KeyComponents": {
+    "properties": {
+     "cpu": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Cpu"
+     },
+     "gpu": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Gpu"
+     },
+     "ram": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Ram"
+     },
+     "storage": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Storage"
+     }
+    },
+    "type": "object",
+    "title": "KeyComponents"
+   },
+   "PowerItem": {
+    "properties": {
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "watts": {
+      "type": "integer",
+      "title": "Watts"
+     }
+    },
+    "type": "object",
+    "required": [
+     "label",
+     "watts"
+    ],
+    "title": "PowerItem"
+   },
+   "PowerOut": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/PowerItem"
+      },
+      "type": "array",
+      "title": "Items"
+     },
+     "estimated_power_w": {
+      "type": "integer",
+      "title": "Estimated Power W"
+     },
+     "margin": {
+      "type": "number",
+      "title": "Margin"
+     },
+     "gpu_recommended_psu_w": {
+      "type": "integer",
+      "title": "Gpu Recommended Psu W"
+     },
+     "psu_recommended_w": {
+      "type": "integer",
+      "title": "Psu Recommended W"
+     },
+     "installed_psu_w": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Installed Psu W"
+     }
+    },
+    "type": "object",
+    "required": [
+     "items",
+     "estimated_power_w",
+     "margin",
+     "gpu_recommended_psu_w",
+     "psu_recommended_w",
+     "installed_psu_w"
+    ],
+    "title": "PowerOut"
+   },
+   "Preferences": {
+    "properties": {
+     "cpu_brand": {
+      "type": "string",
+      "enum": [
+       "amd",
+       "intel",
+       "any"
+      ],
+      "title": "Cpu Brand",
+      "default": "any"
+     },
+     "gpu_brand": {
+      "type": "string",
+      "enum": [
+       "amd",
+       "nvidia",
+       "intel",
+       "any"
+      ],
+      "title": "Gpu Brand",
+      "default": "any"
+     },
+     "form_factor": {
+      "type": "string",
+      "enum": [
+       "any",
+       "compact",
+       "mini_itx"
+      ],
+      "title": "Form Factor",
+      "default": "any"
+     },
+     "wifi_required": {
+      "type": "boolean",
+      "title": "Wifi Required",
+      "default": false
+     },
+     "min_ram_gb": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Min Ram Gb"
+     },
+     "min_storage_gb": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Min Storage Gb"
+     },
+     "quiet": {
+      "type": "boolean",
+      "title": "Quiet",
+      "default": false
+     },
+     "rgb": {
+      "type": "boolean",
+      "title": "Rgb",
+      "default": false
+     },
+     "no_discrete_gpu": {
+      "type": "boolean",
+      "title": "No Discrete Gpu",
+      "default": false
+     }
+    },
+    "type": "object",
+    "title": "Preferences"
+   },
+   "ReplaceRequest": {
+    "properties": {
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "component_id": {
+      "type": "integer",
+      "title": "Component Id"
+     },
+     "extra_component_id": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Extra Component Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "category",
+     "component_id"
+    ],
+    "title": "ReplaceRequest"
+   },
+   "ReplaceResponse": {
+    "properties": {
+     "build": {
+      "$ref": "#/components/schemas/BuildOut"
+     },
+     "replaced": {
+      "additionalProperties": true,
+      "type": "object",
+      "title": "Replaced"
+     }
+    },
+    "type": "object",
+    "required": [
+     "build",
+     "replaced"
+    ],
+    "title": "ReplaceResponse"
+   },
+   "Requirements": {
+    "properties": {
+     "use_cases": {
+      "items": {
+       "type": "string",
+       "enum": [
+        "gaming",
+        "office",
+        "video_editing",
+        "3d_render",
+        "programming",
+        "study",
+        "streaming",
+        "ml"
+       ]
+      },
+      "type": "array",
+      "title": "Use Cases"
+     },
+     "primary_use_case": {
+      "type": "string",
+      "title": "Primary Use Case",
+      "default": "office"
+     },
+     "budget_rub": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Budget Rub"
+     },
+     "budget_is_strict": {
+      "type": "boolean",
+      "title": "Budget Is Strict",
+      "default": true
+     },
+     "gaming": {
+      "anyOf": [
+       {
+        "$ref": "#/components/schemas/GamingReq"
+       },
+       {
+        "type": "null"
+       }
+      ]
+     },
+     "preferences": {
+      "$ref": "#/components/schemas/Preferences"
+     },
+     "must_include": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Must Include"
+     },
+     "exclude": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Exclude"
+     },
+     "notes": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Notes"
+     },
+     "confidence": {
+      "type": "number",
+      "title": "Confidence",
+      "default": 0.5
+     },
+     "budget_assumed": {
+      "type": "boolean",
+      "title": "Budget Assumed",
+      "default": false
+     }
+    },
+    "type": "object",
+    "title": "Requirements"
+   },
+   "RuleStatus": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "title": "Code"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "ok",
+       "warning",
+       "error"
+      ],
+      "title": "Status"
+     },
+     "messages": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Messages"
+     }
+    },
+    "type": "object",
+    "required": [
+     "code",
+     "title",
+     "status",
+     "messages"
+    ],
+    "title": "RuleStatus"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   },
+   "Warn": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "title": "Code"
+     },
+     "message_ru": {
+      "type": "string",
+      "title": "Message Ru"
+     }
+    },
+    "type": "object",
+    "required": [
+     "code",
+     "message_ru"
+    ],
+    "title": "Warn"
+   }
+  }
+ }
+}

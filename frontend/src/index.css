@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg: 244 245 247;
+  --panel: 255 255 255;
+  --line: 214 218 224;
+  --ink: 22 27 34;
+  --mute: 98 108 122;
+  --accent: 0 122 108;
+  --warn: 176 110 0;
+  --bad: 191 44 44;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 13 17 23;
+    --panel: 22 27 34;
+    --line: 43 51 62;
+    --ink: 224 229 236;
+    --mute: 138 148 161;
+    --accent: 61 214 192;
+    --warn: 240 177 63;
+    --bad: 255 107 107;
+  }
+}
+
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+  body {
+    @apply bg-bg text-ink antialiased;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
+    background-image:
+      linear-gradient(rgb(var(--line) / 0.35) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--line) / 0.35) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-attachment: fixed;
+  }
+  code {
+    @apply rounded bg-line/50 px-1 font-mono text-[0.85em];
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-sm border border-line bg-panel;
+  }
+  .label {
+    @apply font-mono text-[11px] uppercase tracking-wider text-mute;
+  }
+  .btn {
+    @apply inline-flex min-h-[40px] items-center justify-center gap-2 rounded-sm border border-line px-3 py-2 text-sm font-medium transition-colors hover:border-accent hover:text-accent disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply border-accent bg-accent text-bg hover:text-bg hover:opacity-90;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line px-3 py-1 text-xs text-mute hover:border-accent hover:text-accent;
+  }
+  .skeleton {
+    @apply animate-pulse rounded-sm bg-line/60;
+  }
+}
