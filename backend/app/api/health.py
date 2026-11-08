@@ -44,6 +44,8 @@ async def health() -> dict[str, Any]:
     status = "ok" if db["ok"] and redis["ok"] else "degraded"
     from app.catalog.repository import get_catalog
 
+    size: int | None
+    source: str | None
     try:
         cat = await get_catalog()
         size, source = len(cat), cat.mode
