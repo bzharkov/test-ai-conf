@@ -124,15 +124,34 @@ def quick_ok(b: Build, c: Component) -> bool:
         if b.motherboard and s["type"] != b.motherboard.spec("memory_type"):
             return False
         return b.cpu is None or s["type"] in b.cpu.spec("memory_types")
-    if cat == "cpu_cooler" and b.cpu:
-        return b.cpu.spec("socket") in s["sockets"]
+    if cat == "cpu_cooler":
+        if b.cpu and b.cpu.spec("socket") not in s["sockets"]:
+            return False
+        if b.case:
+            if s["type"] == "air":
+                return (s.get("height_mm") or 0) <= b.case.spec("max_cooler_height_mm")
+            return s.get("radiator_mm") in (b.case.spec("radiator_support_mm") or [])
+        return True
     if cat == "case":
         if (
             b.motherboard
             and b.motherboard.spec("form_factor") not in s["supported_mb_form_factors"]
         ):
             return False
-        return b.gpu is None or b.gpu.spec("length_mm") <= s["max_gpu_length_mm"]
+        if b.gpu is not None and b.gpu.spec("length_mm") > s["max_gpu_length_mm"]:
+            return False
+        if b.cpu_cooler is not None:
+            ck = b.cpu_cooler.specs
+            if ck["type"] == "air" and (ck.get("height_mm") or 0) > s["max_cooler_height_mm"]:
+                return False
+            if ck["type"] == "aio" and ck.get("radiator_mm") not in (
+                s.get("radiator_support_mm") or []
+            ):
+                return False
+        return True
+    if cat == "psu" and b.case:
+        pf, cf = s["form_factor"], b.case.spec("psu_form_factor")
+        return pf == cf or (pf == "SFX" and cf == "ATX")
     if cat == "gpu" and b.case:
         return s["length_mm"] <= b.case.spec("max_gpu_length_mm")
     return True

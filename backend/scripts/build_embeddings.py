@@ -1,6 +1,7 @@
 """Compute search_text embeddings (e5-small, CPU) and store them in components.embedding."""
 
 import asyncio
+import sys
 
 import _common  # noqa: F401
 from sqlalchemy import select, update
@@ -24,7 +25,9 @@ async def main(batch: int = 64) -> None:
                     ComponentRow.model,
                     ComponentRow.specs,
                     ComponentRow.search_text,
-                ).order_by(ComponentRow.id)
+                )
+                .where(ComponentRow.embedding.is_(None) | ("--all" in sys.argv))
+                .order_by(ComponentRow.id)
             )
         ).all()
         for i in range(0, len(rows), batch):

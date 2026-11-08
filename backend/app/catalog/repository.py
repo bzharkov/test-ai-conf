@@ -88,7 +88,14 @@ def build_seed_components(
         if csv_provider.unmatched:
             log.warning("unmatched price rows: %s", csv_provider.unmatched)
         provider = csv_provider
-    prices = asyncio.run(provider.get_prices([c.id for c in base])) if not _in_loop() else {}
+    ids = [c.id for c in base]
+    if _in_loop():  # called from async code: run the provider on its own loop in a thread
+        import concurrent.futures
+
+        with concurrent.futures.ThreadPoolExecutor(1) as ex:
+            prices = ex.submit(lambda: asyncio.run(provider.get_prices(ids))).result()
+    else:
+        prices = asyncio.run(provider.get_prices(ids))
     return _apply_prices(base, prices)
 
 

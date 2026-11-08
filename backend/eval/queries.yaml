@@ -1,0 +1,37 @@
+# expect keys: dgpu (true/false), min_ram, min_gpu_perf, min_cpu_multi, min_cpu_gaming,
+#              compact (case without ATX), unreachable (budget physically too small), has_budget
+queries:
+  # gaming
+  - {id: g01, text: "Игры в 1440p до 120 000 ₽", expect: {dgpu: true, min_gpu_perf: 38}}
+  - {id: g02, text: "Игровой ПК для Cyberpunk 2077 в 1080p, бюджет 70 000 руб", expect: {dgpu: true, min_gpu_perf: 20}}
+  - {id: g03, text: "Мощный игровой компьютер 4K до 250 000 ₽", expect: {dgpu: true, min_gpu_perf: 55}}
+  - {id: g04, text: "ПК для Dota 2 и CS2 до 60 000 ₽", expect: {dgpu: true, min_gpu_perf: 13}}
+  - {id: g05, text: "игры 1440p 144 fps до 150к", expect: {dgpu: true, min_gpu_perf: 40}}
+  - {id: g06, text: "Игровой пк до 90 тыс, только Intel", expect: {dgpu: true, min_gpu_perf: 20}}
+  - {id: g07, text: "Игровой ПК за 100000, процессор AMD, нужен Wi-Fi", expect: {dgpu: true, min_gpu_perf: 20}}
+  - {id: g08, text: "Игры в 1080p до 65 000 ₽, 32 ГБ ОЗУ", expect: {dgpu: true, min_ram: 32}}
+  # video / render / streaming / ml
+  - {id: v01, text: "Монтаж 4K до 200 000 ₽", expect: {dgpu: true, min_ram: 32, min_cpu_multi: 60}}
+  - {id: v02, text: "Видеомонтаж в Premiere, бюджет 130 000 ₽", expect: {dgpu: true, min_ram: 32, min_cpu_multi: 55}}
+  - {id: v03, text: "ПК для игр в 1440p и монтажа до 120 000 ₽", expect: {dgpu: true, min_ram: 32}}
+  - {id: v04, text: "3D рендер в Blender до 180 000 ₽", expect: {dgpu: true, min_ram: 32, min_cpu_multi: 55}}
+  - {id: v05, text: "Стрим на Twitch и игры до 140 000 ₽", expect: {dgpu: true, min_gpu_perf: 30}}
+  - {id: v06, text: "Машинное обучение и нейросети, 220 000 ₽", expect: {dgpu: true, min_ram: 32, min_gpu_perf: 38}}
+  # office / study / programming
+  - {id: o01, text: "Офисный ПК до 40 000 ₽", expect: {dgpu: false}}
+  - {id: o02, text: "Компьютер для работы с документами и браузером 35 000 рублей", expect: {dgpu: false}}
+  - {id: o03, text: "Недорогой офисный ПК с Wi-Fi до 45 000 ₽", expect: {dgpu: false}}
+  - {id: s01, text: "Компактный ПК для учёбы и Dota 2 до 70 000 ₽", expect: {compact: true}}
+  - {id: s02, text: "ПК студенту для учёбы, 50 000 ₽", expect: {dgpu: false}}
+  - {id: p01, text: "ПК для программирования и Docker до 90 000 ₽", expect: {dgpu: false, min_ram: 16, min_cpu_multi: 35}}
+  - {id: p02, text: "Разработка, много виртуалок, 32 ГБ ОЗУ, 110 тыс", expect: {min_ram: 32}}
+  # edge cases
+  - {id: e01, text: "Хочу мощный игровой компьютер", expect: {dgpu: true, has_budget: false}}
+  - {id: e02, text: "нужен компьютер", expect: {has_budget: false}}
+  - {id: e03, text: "4K-гейминг за 30 000 ₽", expect: {unreachable: true}}
+  - {id: e04, text: "Игровой ПК с RTX 4070 SUPER до 150 000 ₽", expect: {dgpu: true, min_gpu_perf: 40}}
+  - {id: e05, text: "Сборка на Ryzen 7 7800X3D и RTX 4060 до 140 000 ₽", expect: {dgpu: true}}
+  - {id: e06, text: "Компактный игровой ПК mini-itx до 130 000 ₽", expect: {dgpu: true, compact: true}}
+  - {id: e07, text: "Игры без видеокарты на встроенной графике до 50 000 ₽", expect: {dgpu: false}}
+  - {id: e08, text: "Супер-пупер ПК за 500 000 ₽ для игр в 4K", expect: {dgpu: true, min_gpu_perf: 55}}
+  - {id: e10, text: "Игровой ПК с RTX 9999 до 100 000 ₽", expect: {dgpu: true}}

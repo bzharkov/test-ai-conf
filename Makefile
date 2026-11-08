@@ -1,4 +1,4 @@
-.PHONY: check backend-check frontend-check up
+.PHONY: check backend-check frontend-check up eval
 check: backend-check frontend-check
 
 backend-check:
@@ -9,3 +9,6 @@ frontend-check:
 
 up:
 	docker compose up --build
+
+eval:
+	cd backend && python eval/run_eval.py

@@ -1,0 +1,56 @@
+# Production: nginx serves the built frontend and proxies /api to the backend.
+# Usage: docker compose -f docker-compose.prod.yml --env-file .env up -d --build
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me}
+      POSTGRES_DB: pcconf
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d pcconf"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: postgresql+asyncpg://app:${POSTGRES_PASSWORD:-change-me}@db:5432/pcconf
+      REDIS_URL: redis://redis:6379/0
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost}
+    depends_on:
+      db: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    command: >
+      sh -c "alembic upgrade head &&
+             python scripts/seed_demo.py &&
+             (python scripts/build_embeddings.py || true) &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.prod
+    restart: unless-stopped
+    depends_on: [backend]
+    ports: ["80:80"]
+
+volumes:
+  pgdata:
